@@ -1,0 +1,16 @@
+02/12/2020 
+Log 1:
+
+-The client assigned us to create a food delivery app to compete with current mainstream food delivery services
+
+-Some of the features they want are the ability to set food preferences and create profiles (like if they like Italian food or deserts)
+
+-There should also be search options for food preferences and blacklisted options (you don’t want vegan food to show up)
+
+-The website should also be able to learn and recommend food based on their preferences AND what they have ordered in the past
+
+-There should also be a way for the user to leave feedback on food (if it was good or not, if it came in fast) and also review the restaurant they got the food from (if the restaurant makes the food reliably or if they always cancel on the customer) 
+
+-The name and aesthetics of the website is up to us 
+
+
