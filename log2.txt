@@ -1,0 +1,9 @@
+02/17/2020 
+Log 2:
+
+-The group has parted up the work for each member
+
+-We will begin working on what each profile need and what we need to add in the database
+
+-Started initializing the database to handle a profile
+

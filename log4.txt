@@ -1,0 +1,7 @@
+02/21/2020 
+Log 4:
+
+●	The client requested us to create a small webpage app that talks to express and asks for dump of data, and populate mongodb with mock data. Also work on the SRS document and ER diagram.
+
+●	Discussed some changes that we should do to the data model:
+foodtype should be a tag, and each menu item should have a tag (egg → tag→ vegetarian). Debated whether we should change tag from a string to its own class. Valuable to have a review history.
