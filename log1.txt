@@ -1,7 +1,7 @@
 02/12/2020 
 Log 1:
 
--The client assigned us to create a food delivery app to compete with current mainstream food delivery services
+-The client assigned us to create a food delivery app to compete with current mainstream food Testing Changes
 
 -Some of the features they want are the ability to set food preferences and create profiles (like if they like Italian food or deserts)
 
