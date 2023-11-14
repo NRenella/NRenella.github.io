@@ -1,7 +1,0 @@
-02/24/2020 
-Log 5:
-
-●	Worked on instantiating the server and hosting the website on Heroku.
-●	Discussed what to include in the SRS document and divided the work.
-
-

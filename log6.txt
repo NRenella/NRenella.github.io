@@ -1,9 +1,0 @@
-02/26/2020 
-Log 6:
-
-●	Worked on updating the database model and ER model.
-●	Finished instantiating the server and making the website run on Heroku.
-●	Finished writing the SRS document.
-
-
-
