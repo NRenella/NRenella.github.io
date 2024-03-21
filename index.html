@@ -1,179 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-    <link rel="icon" href="./assets/images/1311.png" />
-		<title>Noah Portfolio</title>
-    <meta name="description" content="A portfolio for Noah Renella">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
-
-		<script defer src="./js/script.js"></script>
-	</head>
-	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <span class="nav-title">Noah Renella</span>
-        <a class="button" href="mailto:ntrenella@gmail.com">
-          <span class="button-text">Contact Me</span>
-        </a>
-      </a>
-    </div>
-
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
-
-      <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-        </div>
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hey, I'm Noah Renella.</span>
-              <div class="body-text">I'm a graduate of Cal Poly Pomona's 2023 Computer Science Masters Program. My passion is Computer Science and my interest inlcude software design and development, artificial intelligence, machine learning, computer vision, and natural language processing.</div>
-            </br>
-              <div class="body-text">Below are a couple of the projects and experiences I've worked on.</div>
+    <!-- Navigation -->
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <a href="#" class="text-white text-2xl font-bold">Noah's Portfolio</a>
             </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-        </div>
-      </div>
-      <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work</span>
-
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="./assets/images/calpolypomonalogo.jpg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Machine Learning Researcher</div>
-              <div class="body-text project-card-text">Nov 2021 - Jun 2023</div>
-              <div class="body-text project-card-text">• Researched and developed machine learning algorithms, in Python code utilizing TensorFlow, capable of classifying and locating weed and strawberry plants</div>
-              <div class="body-text project-card-text">• Collaborated with a team of students to deploy the machine learning models on to an aerial vehicle which would communicate with a ground vehicle to provide real time detection and removal </div>
-              <div class="body-text project-card-text">• Managed and analyzed large data sets of plant values to correlate ground truth with multispectral UAV values</div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-white">Work</a></li>
+                    <li><a href="#projects" class="text-white">Projects</a></li>
+                    <li><a href="#skills" class="text-white">Skills</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/ptblogo.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Inventory and Customers</div>
-              <div class="body-text project-card-text">Aug 2017 - May 2020</div>
-              <div class="body-text project-card-text">• Maintained all inventory and customer purchases whether walk-in, phone call, or online</div>
-              <div class="body-text project-card-text">• Created programs used to calculate cost, organize company inventory, and catalog orders</div>
-              <div class="body-text project-card-text">• Provided Customer service to customers who were looking for a specific item as well as making sure the items sold were removed from the inventory databased and shipped
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="bg-gray-900 text-white py-20 relative flex items-center">
+        <div class="container mx-auto px-4 flex items-center">
+            <img src="\assets\linkedinpic.png" alt="Avatar" class="w-40 h-40 rounded-full border-4 border-white">
+            <div class="ml-6">
+                <h1 class="text-4xl font-bold">Hello, I'm Noah Renella</h1>
+                <p class="text-xl mt-4">I graduated from Cal Poly Pomona's Computer Science Master's Program in 2023. My profound passion lies in Computer Science, with a keen interest in software design and development, artificial intelligence, machine learning, computer vision, and natural language processing. I thrive on continuous learning, creative endeavors, and tackling complex problems. Below, you'll find a selection of projects and experiences I've had the privilege to work on.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="assets\calpolypomonalogo.jpg" alt="Work 1" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">Machine Learning Researcher</h3>
+                    <p class="fade-in" id="initialText">In this role, I utilized a Scrum-style work environment to conduct research on machine learning methods for detecting and isolating weeds and strawberry plants. My responsibilities were as follows:</p>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent1">
+                        <ul class="list-disc ml-6">
+                            <li>Researched and developed machine learning algorithms in Python code utilizing TensorFlow, capable of classifying and locating weeds and strawberry plants.</li>
+                            <li>Collaborated with a team of students to deploy the machine learning models onto an aerial vehicle, which would communicate with a ground vehicle to provide real-time detection and removal.</li>
+                            <li>Managed and analyzed large datasets of plant values to correlate ground truth with multispectral UAV values.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent1')" class="text-blue-500">Read More...</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="assets\ptblogo.jpg" alt="Work 2" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">IT and Customer Service</h3>
+                    <p class="fade-in" id="initialText">In this position, I worked directly with the owner and workers of the business to manage spreadsheets and handle customer orders. My responsibilities were as follows:</p>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent2">
+                        <ul class="list-disc ml-6">
+                            <li>Maintained all inventory and customer purchases, whether walk-in, phone call, or online.</li>
+                            <li>Created online spreadsheets used to calculate costs, organize company inventory, and catalog orders.</li>
+                            <li>Provided customer service to customers looking for specific items and ensured that sold items were removed from the inventory database and shipped.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent2')" class="text-blue-500">Read More...</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="assets\dhslogo.jpg" alt="Work 3" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">Peer Tutor</h3>
+                    <p class="fade-in" id="initialText">This position allowed me to provide face-to-face assistance to other students who required help. I would have as many as four tutees in a given week. My responsibilities were as follows:</p>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent3">
+                        <ul class="list-disc ml-6">
+                            <li>Visited classrooms as a speaker to provide assistance and guidance, as well as answer any questions students may have.</li>
+                            <li>Provided learning assistance to students in any academic subject and homework.</li>
+                            <li>Communicated one-on-one with students and collaborated with other tutors to help out the tutees.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent3')" class="text-blue-500">Read More...</button>
                 </div>
             </div>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/school_logo.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Peer Tutor</div>
-              <div class="body-text project-card-text">Aug 2015 - Jul 2016</div>
-              <div class="body-text project-card-text">• Providing learning assistance to students in any academic subject and homework</div>
-              <div class="body-text project-card-text">• Communicated one on one with students and conversed with the other tutors to help out the tutees</div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+    </section>
 
-        <div class="projects-container">
-          <!-- 
-            TODO
-
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="project1.jpg" alt="Project 1" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Project 2</h3>
+                    <img src="project2.jpg" alt="Project 2" class="mb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Project 3</h3>
+                    <img src="project3.jpg" alt="Project 3" class="mb-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
             </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
-          <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Skills</h2>
+            <ul class="grid grid-cols-2 gap-4">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+    </section>
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <form action="#" method="POST" class="max-w-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="form-input mt-1 block w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="form-input mt-1 block w-full" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" class="form-textarea mt-1 block w-full" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-	</body>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-white">© 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js">
+    </script>
+</body>
 </html>
