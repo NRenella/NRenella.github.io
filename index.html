@@ -17,8 +17,8 @@
             <div>
                 <ul class="flex space-x-4">
                     <li><a href="#about" class="text-white">Work</a></li>
+                    <li><a href="#skills" class="text-white">Education</a></li>
                     <li><a href="#projects" class="text-white">Projects</a></li>
-                    <li><a href="#skills" class="text-white">Skills</a></li>
                     <li><a href="#contact" class="text-white">Contact</a></li>
                 </ul>
             </div>
@@ -89,45 +89,116 @@
             </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-200">
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-200">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <img src="project1.jpg" alt="Project 1" class="mb-4">
-                    <h3 class="text-xl font-bold mb-4">Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="assets\calpolypomonalogo.jpg" alt="Education 1" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">California State Polytechnic University, Pomona</h3>
+                    <h3 class="text-lg mb-4">Master of Science, Computer Science Degree </h3>
+                    <h3 class="text-lg mb-4">GPA: 4.0 </h3>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent4">
+                        <ul class="list-disc ml-6">
+                            <li>Advanced Algorithm Design and Analysis</li>
+                            <li>Image Processing</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Architecture</li>
+                            <li>Computer Graphics</li>
+                            <li>Advanced Software Engineering</li>
+                            <li>Artificial Intelligence in Entertainment</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent4')" class="text-blue-500">Relevant Courses...</button>
                 </div>
+                
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Project 2</h3>
-                    <img src="project2.jpg" alt="Project 2" class="mb-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="assets\calpolypomonalogo.jpg" alt="Education 2" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">California State Polytechnic University, Pomona</h3>
+                    <h3 class="text-lg mb-4">Bachelor of Science, Computer Science Degree </h3>
+                    <h3 class="text-lg mb-4">Core GPA: 3.75 </h3>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent5">
+                        <ul class="list-disc ml-6">
+                            <li>Databases and Data Models</li>
+                            <li>Data Structures</li>
+                            <li>C++ Programming</li>
+                            <li>Numerical Methods</li>
+                            <li>Object-Oriented Design and Programming</li>
+                            <li>Software Engineering</li>
+                            <li>Game Development</li>
+                            <li>Mobile Development</li>
+                            <li>Calculus</li>
+                            <li>Programming GUIs</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent5')" class="text-blue-500">Relevant Courses...</button>
                 </div>
+                
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4">Project 3</h3>
-                    <img src="project3.jpg" alt="Project 3" class="mb-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="assets\citruslogo.jpg" alt="Education 3" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">Citrus Community College, Glendora</h3>   
+                    <h4 style="color: white;">.</h4>
+                    <h3 class="text-lg mb-4">General Education</h3>        
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-16">
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8">Skills</h2>
-            <ul class="grid grid-cols-2 gap-4">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-            </ul>
+            <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="assets\pickonelogo.jpg" alt="Work 1" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">PickOne Mobile App</h3>
+                    <p class="fade-in" id="initialText">In this role, I utilized a Scrum-style work environment to conduct research on machine learning methods for detecting and isolating weeds and strawberry plants. My responsibilities were as follows:</p>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent1">
+                        <ul class="list-disc ml-6">
+                            <li>Researched and developed machine learning algorithms in Python code utilizing TensorFlow, capable of classifying and locating weeds and strawberry plants.</li>
+                            <li>Collaborated with a team of students to deploy the machine learning models onto an aerial vehicle, which would communicate with a ground vehicle to provide real-time detection and removal.</li>
+                            <li>Managed and analyzed large datasets of plant values to correlate ground truth with multispectral UAV values.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent1')" class="text-blue-500">Read More...</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="assets\ptblogo.jpg" alt="Work 2" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">IT and Customer Service</h3>
+                    <p class="fade-in" id="initialText">In this position, I worked directly with the owner and workers of the business to manage spreadsheets and handle customer orders. My responsibilities were as follows:</p>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent2">
+                        <ul class="list-disc ml-6">
+                            <li>Maintained all inventory and customer purchases, whether walk-in, phone call, or online.</li>
+                            <li>Created online spreadsheets used to calculate costs, organize company inventory, and catalog orders.</li>
+                            <li>Provided customer service to customers looking for specific items and ensured that sold items were removed from the inventory database and shipped.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent2')" class="text-blue-500">Read More...</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="assets\dhslogo.jpg" alt="Work 3" class="mb-4">
+                    <h3 class="text-xl font-bold mb-4">Peer Tutor</h3>
+                    <p class="fade-in" id="initialText">This position allowed me to provide face-to-face assistance to other students who required help. I would have as many as four tutees in a given week. My responsibilities were as follows:</p>
+                    <!-- Bullet Point Section -->
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-4 hidden" id="expandableContent3">
+                        <ul class="list-disc ml-6">
+                            <li>Visited classrooms as a speaker to provide assistance and guidance, as well as answer any questions students may have.</li>
+                            <li>Provided learning assistance to students in any academic subject and homework.</li>
+                            <li>Communicated one-on-one with students and collaborated with other tutors to help out the tutees.</li>
+                        </ul>
+                    </div>
+                    <button onclick="toggleExpand('expandableContent3')" class="text-blue-500">Read More...</button>
+                </div>
+            </div>
         </div>
     </section>
 
